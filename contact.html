@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Josefin+Sans:ital,wght@0,300;0,400;1,300&display=swap");
+    </style>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Elinor Krammings Portfolio" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script defer src="script.js"></script>
+    <title>Elinors Portfolio Kontakt</title>
+  </head>
+  <!--Body-->
+  <body>
+    <nav class="navigation">
+      <div class="navigation-logo">
+        <a href="index.html"
+          ><img src="img/Logo.png" alt="Elinor krammings logotyp"
+        /></a>
+      </div>
+      <div class="navigation-items">
+        <a href="index.html">Hem</a>
+        <a href="aboutMe.html">Om mig</a>
+        <a href="myWork.html">Arbete</a>
+        <a href="#" class="active">Kontakt</a>
+      </div>
+    </nav>
+    <main>
+      <h1>Hör gärna av dig!</h1>
+      <!---Form-->
+
+      <form action="mailto:zellis.k@gmail.com" class="form-wrapper">
+        <div class="field-message">
+          <h2>Kära Elinor Kramming,</h2>
+          <label for="message"></label>
+          <textarea
+            id="message"
+            rows="10"
+            cols="40"
+            name="message"
+            placeholder="Skriv ditt meddelande här...."
+          ></textarea>
+        </div>
+        <div class="field-first-name">
+          <h3>Hälsningar från,</h3>
+          <label for="first_name">Namn*</label>
+          <input
+            required
+            class="form_input"
+            type="text"
+            id="first_name"
+            name="first_name"
+            placeholder="Namn"
+          />
+        </div>
+
+        <div class="field-email">
+          <label for="email">E-postadress*</label>
+          <input
+            required
+            type="email"
+            id="email"
+            name="email"
+            placeholder="E-postadress"
+          />
+        </div>
+        <input type="submit" class="send-button" />
+      </form>
+
+      <!--  section with social media contacts-->
+      <section>
+        <h4>Eller genom :</h4>
+        <div class="container-socialmedia">
+          <figure>
+            <a href="http://www.linkedin.com/feed/">
+              <img src="img/linked-in.png" alt="Linked in logga"
+            /></a>
+          </figure>
+          <figure>
+            <a href="https://github.com/Zellis-kramming/portfolio"
+              ><img src="img/GitHub.png" alt="Git hub logga"
+            /></a>
+          </figure>
+
+          <figure>
+            <a href="https://www.instagram.com/"
+              ><img src="img/Instagram.png" alt="Instagram"
+            /></a>
+          </figure>
+        </div>
+      </section>
+    </main>
+    <!--footer and bottom navigation-->
+    <footer>
+      <nav class="navigation">
+        <div class="navigation-items">
+          <a href="index.html">Hem</a>
+          <a href="aboutMe.html">Om mig</a>
+          <a href="myWork.html">Arbete</a>
+          <a href="#" class="active">Kontakt</a>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>
