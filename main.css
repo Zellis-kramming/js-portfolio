@@ -1,3 +1,5 @@
+/* WCAG i Have choosen a font that are easy to read and i have increased the spaces between the rows and the letter spacing for extra godd visibility 1.4.12. I use a background colour to show where the text stops and a new section begins. i have made sure that i use a good contrast between the text and the backgound 1.4.3  */
+
 body {
   max-width: 1400px;
   margin: 0 auto;
@@ -69,7 +71,7 @@ article {
   border-radius: 5px;
 }
 
-/* Top anvigation*/
+/* Top navigation*/
 .navigation {
   display: flex;
   justify-content: space-between;
