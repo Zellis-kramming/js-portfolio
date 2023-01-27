@@ -26,22 +26,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" href="menu.css" />
     <script defer src="script.js"></script>
     <title>Elinors Portfolio om mig</title>
   </head>
   <!--Body-->
   <body>
-    <nav class="navigation">
-      <div class="navigation-logo">
+    <nav class="navigation-full">
+      <div class="navigation-full-logo">
         <a href="index.html"
           ><img src="img/Logo.png" alt="Elinor krammings logotyp"
         /></a>
       </div>
-      <div class="navigation-items">
+      <div class="navigation-full-items">
         <a href="index.html">Hem</a>
         <a href="#" class="active">Om mig</a>
         <a href="myWork.html">Arbete</a>
         <a href="contact.html">Kontakt</a>
+      </div>
+    </nav>
+    <!-- Hamburger menu that only shows in mobils-->
+    <nav class="navigation-small">
+      <div class="hamburger-menu">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-btn" for="menu-toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu-box">
+          <li><a class="menu-item" href="index.html">Hem</a></li>
+          <li><a class="menu-item" href="#">Om mig</a></li>
+          <li><a class="menu-item" href="myWork.html">Arbete</a></li>
+          <li><a class="menu-item" href="contact.html">Kontakt</a></li>
+        </ul>
       </div>
     </nav>
     <main>
@@ -120,7 +137,7 @@
             />
           </figure>
           <div>
-            <h3>Var i naturen</h3>
+            <h3>Vara i naturen</h3>
             <p>
               Att bara få vara i naturen, andas in luften lyssna på fåglarna.
               Känna grönskan under fötterna.

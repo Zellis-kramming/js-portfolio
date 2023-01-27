@@ -28,25 +28,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" href="menu.css" />
     <link rel="manifest" href="/site.webmanifest" />
     <script defer src="script.js"></script>
+    <!-- Two stylesheets are linked menu and main so that the css pages are more readeble. Javascriptlink in the head and a defer so that the javascript ins added last.-->
     <title>Elinors Portfolio hem</title>
     <!--Anger tydliga sidtitlar enligt WCAG 2.4.4-->
   </head>
   <!--Body-->
   <body>
     <!--Navigation, here is the navigation, its the same on every side-->
-    <nav class="navigation">
-      <div class="navigation-logo">
+    <nav class="navigation-full">
+      <div class="navigation-full-logo">
         <a href="index.html"
           ><img src="img/Logo.png" alt="Elinor krammings logotyp"
         /></a>
       </div>
-      <div class="navigation-items">
+      <div class="navigation-full-items">
         <a class="active">Hem</a>
         <a href="aboutMe.html">Om mig</a>
         <a href="myWork.html">Arbete</a>
         <a href="contact.html">Kontakt</a>
+      </div>
+    </nav>
+    <!-- Hamburger menu that only shows in mobils-->
+    <nav class="navigation-small">
+      <div class="hamburger-menu">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-btn" for="menu-toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu-box">
+          <li><a class="menu-item" href="#">Hem</a></li>
+          <li><a class="menu-item" href="aboutMe.html">Om mig</a></li>
+          <li><a class="menu-item" href="myWork.html">Arbete</a></li>
+          <li><a class="menu-item" href="contact.html">Kontakt</a></li>
+        </ul>
       </div>
     </nav>
     <!--Main-->
@@ -157,3 +175,8 @@
     </footer>
   </body>
 </html>
+
+<!-- länka bilder <a target="_blank" href="https://icons8.com/icon/21525/summer">Summer</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/1RZffALm9Wgo/cloud">Cloud</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/39465/snow-storm">Snow Storm</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/39453/partly-cloudy-day">Partly Cloudy Day</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->

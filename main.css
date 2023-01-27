@@ -20,10 +20,6 @@ a {
   color: rgb(41, 40, 40);
 }
 
-main {
-  padding-left: 20px;
-  padding-right: 20px;
-}
 figure {
   margin: 0;
 }
@@ -45,16 +41,18 @@ h4 {
 }
 
 h1 {
-  font-size: 2.1rem;
+  font-size: 1.6rem;
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 h3 {
   font-size: 1.2rem;
   line-height: 1.7rem;
 }
-
+.navigation-full {
+  display: none;
+}
 /*utility classes*/
 .no-margin--top {
   margin-top: 0;
@@ -69,37 +67,6 @@ h3 {
 article {
   background-color: rgba(236, 238, 236, 0.914);
   border-radius: 5px;
-}
-
-/* Top navigation*/
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 3rem;
-  flex-direction: column;
-  padding: 1rem;
-}
-.navigation-logo {
-  margin: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-.navigation .navigation-items {
-  display: flex;
-  gap: 1.6rem;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-}
-.navigation .navigation-items .active {
-  text-decoration-line: underline;
-  text-decoration-thickness: 3px;
-}
-.navigation a {
-  text-decoration: none;
-  color: rgb(41, 40, 40);
-  font-weight: 500;
-  letter-spacing: 0.2rem;
 }
 
 .container-img {
@@ -233,14 +200,22 @@ textarea {
   max-width: 2.5rem;
 }
 /*Grid Passions*/
+
+.grid-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: auto;
+  padding-bottom: 4rem;
+}
 .grid-item {
   background-color: whitesmoke;
   border-radius: 5px;
   padding: 20px;
   text-align: center;
 }
+
 /*Footer*/
-.bottom-navigation {
+/* .bottom-navigation {
   width: auto;
   margin: 0;
   display: flex;
@@ -260,10 +235,69 @@ textarea {
   text-decoration: underline;
   transition: 0.7s;
   color: green;
-}
+} */
 
-/* Desktop*/
+/*Tablet*/
 @media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.1rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  /* About me*/
+
+  /* Top navigation*/
+  .navigation-full {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    flex-direction: row;
+    padding: 1rem;
+  }
+  .navigation-full-logo {
+    margin: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .navigation-full .navigation-full-items {
+    display: flex;
+    gap: 1.6rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .navigation-full .navigation-full-items .active {
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+  }
+  .navigation-full a {
+    text-decoration: none;
+    color: rgb(41, 40, 40);
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+  }
+  .navigation-small {
+    display: none;
+  }
+  body {
+    background-color: red;
+  }
+
+  .grid-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: auto auto;
+    padding-bottom: 4rem;
+  }
+}
+/* Desktop*/
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: pink;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   main {
     padding: 0;
   }
@@ -317,7 +351,7 @@ textarea {
   .flex-container-footer {
     display: flex;
   }
-  .bottom-navigation {
+  /* .bottom-navigation {
     font-size: 1.2rem;
     justify-content: space-evenly;
     height: 15rem;
@@ -331,16 +365,16 @@ textarea {
   .bottom-navigation .active {
     text-decoration-line: underline;
     text-decoration-thickness: 3px;
-    color: red;
+    color: red; 
   }
-
+*/
   /*form*/
 
-  .send-button {
+  .expandable .send-button {
     cursor: pointer;
     box-shadow: 0 0.2rem #999;
   }
-  .send-button:hover {
+  .expandable .send-button:hover {
     background-color: rgb(143, 75, 97);
     color: aliceblue;
     font-weight: bolder;
@@ -363,4 +397,104 @@ textarea {
     grid-template-columns: auto auto auto;
     padding-bottom: 4rem;
   }
+
+  /* Testar nedan*/
+  .expandable {
+    background-color: rgb(143, 75, 97);
+    color: aliceblue;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 2rem;
+    width: 50%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 1rem;
+    font-size: larger;
+    font-family: barlow, sans-serif;
+  }
+
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
 }
+
+/* 
+#menu-toggle {
+  opacity: 0;
+}
+#menu-toggle:checked + .menu-btn > span {
+  transform: rotate(45deg);
+}
+#menu-toggle:checked + .menu-btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu-toggle:checked + .menu-btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu-toggle:checked ~ .menu-box {
+  left: 0 !important;
+}
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 56px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #616161;
+  transition-duration: 0.25s;
+}
+.menu-btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu-btn > span::after {
+  content: "";
+  top: 8px;
+}
+.menu-box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0 0 20px;
+  list-style: none;
+  background-color: #eceff1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
+}
+.menu-box li {
+  padding-bottom: 15px;
+  font-size: 23px;
+}
+.menu-item {
+  display: block;
+  padding: 12px 24px 12px;
+  color: #333;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+.menu-item:hover {
+  background-color: #cfd8dc;
+} */

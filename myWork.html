@@ -26,23 +26,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" href="menu.css" />
     <script defer src="script.js"></script>
     <title>Elinors Portfolio mitt arbete</title>
   </head>
   <!--Body-->
   <body>
     <!-- Top Navigation, its the same on every side.-->
-    <nav class="navigation">
-      <div class="navigation-logo">
+    <nav class="navigation-full">
+      <div class="navigation-full-logo">
         <a href="index.html"
           ><img src="img/Logo.png" alt="Elinor krammings logotyp"
         /></a>
       </div>
-      <div class="navigation-items">
+      <div class="navigation-full-items">
         <a href="index.html">Hem</a>
         <a href="aboutMe.html">Om mig</a>
         <a href="#" class="active">Arbete</a>
         <a href="contact.html">Kontakt</a>
+      </div>
+    </nav>
+    <!-- Hamburger menu that only shows in mobils-->
+    <nav class="navigation-small">
+      <div class="hamburger-menu">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-btn" for="menu-toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu-box">
+          <li><a class="menu-item" href="index.html">Hem</a></li>
+          <li><a class="menu-item" href="aboutMe.html">Om mig</a></li>
+          <li><a class="menu-item" href="#">Arbete</a></li>
+          <li><a class="menu-item" href="contact.html">Kontakt</a></li>
+        </ul>
       </div>
     </nav>
     <!--main content-->
@@ -196,6 +213,21 @@
 
             <h4>SOS Barnbyar - Koordinator 2001-2021</h4>
             <p>
+              Min senaste roll var som Koordinator på avdelningen "privat
+              insamling". Där jobbade jag backoffice med kundresor, skicka ut
+              enkäter, informationsbrev till givare, påminnelser både att skicka
+              ut dem men också att sätta upp resor för påminnelser tillsammans
+              med de som driftade vårt CRM system. Jag ansvarade för det dagliga
+              arbetet med autogiro, skickande till Bankoch inläsning i vårt CRM
+              system av de filerna. Registerkontroll, uttag och inläsning av
+              data som tex nya faddrar. Mycket av arbetet i linje med GDPR.
+              Mycket av arbetet i linje med GDPR. Vi höll också på att
+              implementera ett Marketing automation system, click dimension, som
+              jag har jobbat lite i. Jag ingick då i ett team som provade på att
+              jobba mer Agilt. Vi använde då Teams Planner, hade dagliga stand
+              Ups, sprintar, retro mm.
+            </p>
+            <!--  <p>
               Jag började som receptionist på SOS Barnbyar med vanliga
               arbetsuppgifter såsom att svara i telefon, koppla samtal, svara på
               informationsmejl, beställa kontorsvaror, ta emot och skicka ut
@@ -207,8 +239,8 @@
               ett nära samarbete med. Arbetet innebar hantering av av data av
               känslig karaktär så är insatt i GDPR.
             </p>
-
-            <p>
+ -->
+            <!-- <p>
               Min senaste roll var som Koordinator på avdelningen "privat
               insamling". Där jobbade jag backoffice med kundresor, skicka ut
               enkäter, informationsbrev till givare, påminnelser både att skicka
@@ -237,6 +269,42 @@
               <li>Grundkurs i Insamling, Giva 2010</li>
               <li>Floristutbildning</li>
             </ul>
+          </div> -->
+
+            <button type="button" class="expandable">
+              Läs mer om mina erfarenheter
+            </button>
+            <div class="content">
+              <p>
+                Jag började som receptionist på SOS Barnbyar med vanliga
+                arbetsuppgifter såsom att svara i telefon, koppla samtal, svara
+                på informationsmejl, beställa kontorsvaror, ta emot och skicka
+                ut minnesgåvor, ta emot besökare, boka resor. När
+                ekonomiavdelningen hade mycket så hjälpte jag även dem att boka
+                inkommande medel. Sedan gick jag vidare till att vara
+                Fadderansvarig på fadderavdelningen. Där hade jag kontakt med
+                faddrar via mejl och telefon. Vårt internationella kontor och
+                kollegorna där hade jag ett nära samarbete med. Arbetet innebar
+                hantering av av data av känslig karaktär så är insatt i GDPR.
+              </p>
+
+              <p></p>
+
+              <h4>Membran - Produktions Assistent 2000 - 2001</h4>
+              <p>
+                Arbete i reception med vanliga arbetsuppgifter så som växel,
+                inkommande och utgående post, boka möten, beställning av
+                kurslitteratur, välkomnande av gäster, ordna fika till
+                kursdeltagare , mm.
+              </p>
+              <h5>Utbildningar</h5>
+              <ul>
+                <li>UX Designer med kravkompetens pågående Chas academy</li>
+                <li>Gränssnittsdesign NTI våren 2021</li>
+                <li>Grundkurs i Insamling, Giva 2010</li>
+                <li>Floristutbildning</li>
+              </ul>
+            </div>
           </div>
           <figure>
             <img
