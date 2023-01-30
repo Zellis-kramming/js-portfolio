@@ -1,5 +1,7 @@
 /* Here are the css for the navigations/ menus. PX is used besause i like a fixed Width.*/
-
+.navigation-full {
+  display: none;
+}
 #menu-toggle {
   opacity: 0;
 }
@@ -74,4 +76,47 @@
 }
 .menu-item:hover {
   background-color: #cfd8dc;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.1rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  /* About me*/
+
+  /* Top navigation*/
+  .navigation-full {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    flex-direction: row;
+    padding: 1rem;
+  }
+  .navigation-full-logo {
+    margin: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .navigation-full .navigation-full-items {
+    display: flex;
+    gap: 1.6rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .navigation-full .navigation-full-items .active {
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+  }
+  .navigation-full a {
+    text-decoration: none;
+    color: rgb(41, 40, 40);
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+  }
+  .navigation-small {
+    display: none;
+  }
 }
