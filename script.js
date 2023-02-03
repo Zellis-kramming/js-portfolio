@@ -10,7 +10,7 @@ function getWeather() {
 
 function getWweatherData(ipadress) {
   fetch(
-    "http://api.weatherapi.com/v1/forecast.json?key=bd524cd22185428ab6d175655233001&q=" +
+    "https://api.weatherapi.com/v1/forecast.json?key=bd524cd22185428ab6d175655233001&q=" +
       ipadress +
       "&days=3&aqi=no&alerts=no&lang=sv"
   )

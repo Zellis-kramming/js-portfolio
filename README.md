@@ -19,4 +19,4 @@ I have used.toLowercase so that the weather should blend in nicely. i use a diff
 
 - Form, contact me form, uses autocompleat and marks the fields according to WCAG WCAG 1.3.5
 
-_I hope you like it! :simple_smile:_
+_I hope you like it!_
