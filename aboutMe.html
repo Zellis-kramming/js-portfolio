@@ -28,9 +28,10 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
     <link rel="stylesheet" href="menu.css" />
     <script defer src="script.js"></script>
+    <!--Using defer because i like to have everything in the head tag.-->
     <title>Elinors Portfolio om mig</title>
   </head>
-  <!--Body-->
+  <!--Body, all HTML inside the body tag-->
   <body>
     <nav class="navigation-full">
       <div class="navigation-full-logo">
@@ -45,7 +46,7 @@
         <a href="contact.html">Kontakt</a>
       </div>
     </nav>
-    <!-- Hamburger menu that only shows in mobils-->
+    <!-- Hamburger menu that only shows in small devices-->
     <nav class="navigation-small">
       <div class="hamburger-menu">
         <input id="menu-toggle" type="checkbox" />
@@ -104,14 +105,14 @@
         Skapande och naturen är genomgående i mina passioner.
       </p>
       <!-- Here is a grid width my passions, text and picture. 
-        I use the grid system so its easy to choose how many "cards" i want on the rows." -->
+        I use the grid system so its easy to choose how many "cards" i want on the rows on different decices" -->
       <div class="grid-container">
         <div class="grid-item">
           <figure>
             <img
               class="info-block-image"
               src="img/gardening-modified.png"
-              alt=""
+              alt="pyttesmå morötter gämförs med tändsticksask"
             />
           </figure>
           <div>
@@ -129,7 +130,7 @@
             <img
               class="info-block-image"
               src="img/garden-wather-modified.png"
-              alt=""
+              alt="gjutgärnskärl i trädgård med liten fontän"
             />
           </figure>
           <h3>Skapa i min trädgård</h3>
@@ -146,7 +147,7 @@
             <img
               class="info-block-image"
               src="img/Outside-wiev-modified.png"
-              alt=""
+              alt="Vy av älv och träd i förgrunden"
             />
           </figure>
           <div>
@@ -182,7 +183,7 @@
             <img
               class="info-block-image"
               src="img/consert.png"
-              alt="liveband på scen"
+              alt="Liveband på scen"
             />
           </figure>
           <div>
@@ -197,26 +198,19 @@
 
         <div class="grid-item">
           <figure>
-            <img
-              class="info-block-image"
-              src="img/garden-wather-modified.png"
-              alt=""
-            />
+            <img class="info-block-image" src="img/bread.png" alt="" />
           </figure>
           <div>
-            <h3>Skapa i min trädgård</h3>
+            <h3>Baka</h3>
             <p>
-              Genom att skapa i min trädgård får jag utöva min kreativitet och
-              vara ute samtidigt! Projekt jag har gjort genom åren är en
-              köksträdgård. Kallmurat en mur. Byggt "vattenfall" av sten" gjutit
-              ett fågelbad av cement och rabarberblad, byggt två verandor och
-              ett växthus av återvunna fönster.
+              Baka har alltid varit något jag tycker om. Surdeg, glutenfritt
+              eller sockerfritt perioderna varierar.
             </p>
           </div>
         </div>
       </div>
     </main>
-    <!--Footer using same nav as top, but displaying it  a bit different on mobil-->
+    <!--Footer using same nav as top, but displaying it a bit different on small devices-->
     <footer>
       <nav class="navigation">
         <div class="navigation-items">

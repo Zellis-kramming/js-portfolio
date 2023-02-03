@@ -25,25 +25,13 @@ function getWweatherData(ipadress) {
       conditionElementText.innerText = conditionText.toLowerCase();
       conditionElementIcon.src = conditionIcon;
 
-      /* switch (conditionText) {
-        case "Clear":
-          conditionText = "Klart";
-          break;
-        case "Partly cloudy":
-          conditionText = "Delvis molniga";
-          break;
-        default:
-          conditionText = ".";
-          break;
-      }*/
-
       console.log(conditionText);
       console.log(conditionIcon);
     });
 }
 
 getWeather();
-// expandeble button on the CV on the page myWork
+// expandeble button on the CV on the page myWork, eventlistener listens to click
 let coll = document.getElementsByClassName("expandable");
 let i;
 
