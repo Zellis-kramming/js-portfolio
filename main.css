@@ -1,4 +1,7 @@
-/* WCAG i Have choosen a font that are easy to read and i have increased the spaces between the rows and the letter spacing for extra godd visibility 1.4.12. I use a background colour to show where the text stops and a new section begins. i have made sure that i use a good contrast between the text and the backgound 1.4.3  */
+/* WCAG i Have choosen a font that are easy to read and i have increased the spaces between the rows and the letter spacing for extra godd visibility 1.4.12. I use a background colour to show where the text stops and a new section begins. I have made sure that i use a good contrast between the text and the backgound 1.4.3
+  The language of the page are stated in the boilerplate 3.1 1. I have used semantic HTML. 
+ 4.1.1 the HTML code are validated in the W3C Validator.
+*/
 
 body {
   max-width: 1400px;
@@ -50,6 +53,11 @@ h3 {
   font-size: 1.2rem;
   line-height: 1.7rem;
 }
+main {
+  margin-top: 50px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
 .navigation-full {
   display: none;
@@ -85,7 +93,10 @@ article {
   width: 100%;
 }
 
-/* Info about*/
+/* Info about */
+.h1-info-block-text {
+  margin-top: 0;
+}
 .info-block {
   display: flex;
   flex-direction: column;
@@ -136,8 +147,8 @@ article {
 .tag5 {
   background-color: rgba(40, 38, 38, 0.696);
 }
-/* Contct page*/
-/* Form*/
+/* Contact page*/
+/* Form, in the form visitors can send a e-mail*/
 .form-wrapper {
   background-color: rgba(221, 222, 221, 0.58);
   margin-top: 1.5rem;
@@ -183,7 +194,9 @@ textarea {
   background-color: #ffe1e1;
   max-width: 24rem;
   font-size: larger;
+  font-weight: bolder;
   font-family: barlow, sans-serif;
+  letter-spacing: 0.09rem;
   transition-delay: 0.1s;
 }
 .send-button:active {
@@ -194,7 +207,8 @@ textarea {
 }
 .send-button:hover {
   cursor: pointer;
-  background-color: rgb(187, 56, 98);
+  background-color: rgb(187, 74, 110);
+  color: aliceblue;
 }
 .container-socialmedia {
   display: flex;
@@ -206,8 +220,12 @@ textarea {
 .container-socialmedia img {
   max-width: 2.5rem;
 }
+/* About me page */
+.weather {
+  font-size: 1.3rem;
+  color: #4f6721;
+}
 /*Grid Passions*/
-
 .grid-container {
   display: grid;
   gap: 2rem;
@@ -234,9 +252,11 @@ textarea {
   font-size: 1rem;
   font-size: medium;
   font-family: barlow, sans-serif;
+  border-radius: 4px;
 }
 .expandable:hover {
   background-color: rgb(187, 56, 98);
+  color: aliceblue;
 }
 .content {
   padding: 0 18px;
@@ -244,29 +264,6 @@ textarea {
   overflow: hidden;
   background-color: #f1f1f1;
 }
-
-/*Footer*/
-/* .bottom-navigation {
-  width: auto;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 0.1 rem solid grey;
-  flex-direction: column;
-  padding: 1rem;
-  line-height: 1.5rem;
-}
-.bottom-navigation a:link {
-  text-decoration: none;
-  color: black;
-  padding-right: 3.5rem;
-}
-.bottom-navigation a:hover {
-  text-decoration: underline;
-  transition: 0.7s;
-  color: green;
-} */
 
 /*Tablet*/
 @media only screen and (min-width: 768px) {
@@ -346,7 +343,14 @@ textarea {
   .container-socialmedia img {
     max-width: 2.5rem;
   }
-  /* About me*/
+  /* About me page*/
+  /* smaller profil pic ión tablets*/
+  #profilPic {
+    max-width: 22rem;
+  }
+  #profilPic2 {
+    max-width: 22rem;
+  }
 
   /* Top navigation*/
   /* .navigation-full {
@@ -381,10 +385,10 @@ textarea {
   .navigation-small {
     display: none;
   } */
-  body {
+  /*  body {
     background-color: red;
-  }
-
+  } */
+  /* Grid with two columns on tablet*/
   .grid-container {
     display: grid;
     gap: 2rem;
@@ -395,14 +399,14 @@ textarea {
 /* Desktop*/
 @media only screen and (min-width: 992px) {
   body {
-    background-color: pink;
     padding-left: 1rem;
     padding-right: 1rem;
   }
   main {
     padding: 0;
+    margin-top: 0;
   }
-  .navigation {
+  /* .navigation {
     justify-content: space-between;
     flex-direction: row;
     margin-bottom: 1rem;
@@ -423,9 +427,9 @@ textarea {
   .navigation .navigation-items {
     display: flex;
     height: 4rem;
-    justify-content: space-between;
+    justify-content: center;
     gap: 0;
-  }
+  } */
   .info-block {
     display: flex;
     flex-direction: row;
@@ -448,10 +452,7 @@ textarea {
   .container-img figure img {
     width: 350px;
   }
-  /*footer*/
-  .flex-container-footer {
-    display: flex;
-  }
+
   /* .bottom-navigation {
     font-size: 1.2rem;
     justify-content: space-evenly;
@@ -469,7 +470,8 @@ textarea {
     color: red; 
   }
 */
-  /*form*/
+
+  /* Contact form*/
 
   .expandable .send-button {
     cursor: pointer;
@@ -490,7 +492,7 @@ textarea {
   .container-socialmedia a:hover {
     border-bottom: 0.2rem solid #999;
   }
-  /* About me*/
+  /* About me page Desktop*/
 
   .grid-container {
     display: grid;
@@ -501,16 +503,11 @@ textarea {
 
   /* Expandeble button with Javascript*/
   .expandable {
-    /* font-weight: bolder;
-    cursor: pointer; */
     padding: 2rem;
     width: 50%;
-    /* border: none; */
-    /* text-align: center; */
-    /* outline: none; */
+
     font-size: 1rem;
     font-size: larger;
-    /* font-family: barlow, sans-serif; */
   }
 
   /* .content {

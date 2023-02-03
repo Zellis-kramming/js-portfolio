@@ -63,19 +63,29 @@
     </nav>
     <main>
       <!--main content-->
+      <!-- Welcoming section with Javascript that prints out the weather where the visitor are and a icon of the weather-->
       <article class="info-block">
         <figure>
           <img
+            id="profilPic"
             class="info-block-image"
             src="img/ProfilPic2.jpg"
             alt="Elinor Kramming"
           />
         </figure>
         <div class="info-block-text">
-          <h1>Vad roligt att du vill läsa lite mer om mig!</h1>
+          <img id="weatherIcon" alt="" />
+          <h1 class="h1-info-block-text">
+            Vad roligt att du vill läsa lite mer om mig!
+          </h1>
+          <h2 class="weather">
+            Idag säger väderleksprognosen att det är
+            <span id="weatherText"></span>.
+          </h2>
+
           <p>
             Jag har jobbat många år på en barnrättsorganisation och brinner för
-            att göra skillnad i sammhället. Det är en härlig känsla att kunna
+            att göra skillnad i samhället. Det är en härlig känsla att kunna
             göra världen till en lite bättre plats genom sitt arbete. Jag har
             jobbat med mycket kundkontakt och är van att lyssna på vad
             kunden/användarens behov.
@@ -93,7 +103,8 @@
       <p class="no-margin--top">
         Skapande och naturen är genomgående i mina passioner.
       </p>
-      <!-- Here is a grid width my passions-->
+      <!-- Here is a grid width my passions, text and picture. 
+        I use the grid system so its easy to choose how many "cards" i want on the rows." -->
       <div class="grid-container">
         <div class="grid-item">
           <figure>
@@ -142,7 +153,8 @@
             <h3>Vara i naturen</h3>
             <p>
               Att bara få vara i naturen, andas in luften lyssna på fåglarna.
-              Känna grönskan under fötterna.
+              Känna grönskan under fötterna. Lära mig namnet på en ny växt
+              kanske?
             </p>
           </div>
         </div>
@@ -158,8 +170,9 @@
           <div>
             <h3>Hänga med min hund</h3>
             <p>
-              Tillsammans med min hund kan jag njuta av en skogspromenad eller
-              ett dopp.
+              Tillsammans med min hund kan jag njuta av saker vi båda tycker om
+              att göra. Ta en skogspromenad eller ett dopp i någon av de sjöar
+              som vi bor i närheten av.
             </p>
           </div>
         </div>
@@ -203,7 +216,7 @@
         </div>
       </div>
     </main>
-    <!--Footer using same nav as top-->
+    <!--Footer using same nav as top, but displaying it  a bit different on mobil-->
     <footer>
       <nav class="navigation">
         <div class="navigation-items">

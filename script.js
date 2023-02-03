@@ -1,22 +1,49 @@
-/*function klickaknapp() {
-  var tal1textbox = document.querySelector("#tal1");
-  var tal2textbox = document.querySelector("#tal2");
-  var tal1 = +tal1textbox.value;
-  var tal2 = +tal2textbox.value;
-  var svar = tal1 + tal2;
-
-  //Skriv ut svaret i textrutan med id=svar
-  var svarTextbox = document.querySelector("#svar");
-  svarTextbox.value = svar;
-
-  if (svar >= 10) {
-    svarTextbox.style.backgroundColor = "green";
-  } else {
-    svarTextbox.style.backgroundColor = "red";
-  }
+// here i have tried both arrow function and regular funtions.
+function getWeather() {
+  // fetch the client ip-address and pass to the request to the weather-api. On page Aboutme
+  fetch("https://api.ipify.org?format=json")
+    .then((response) => response.json())
+    .then((response) => {
+      getWweatherData(response.ip);
+    });
 }
-*/
 
+function getWweatherData(ipadress) {
+  fetch(
+    "http://api.weatherapi.com/v1/forecast.json?key=bd524cd22185428ab6d175655233001&q=" +
+      ipadress +
+      "&days=3&aqi=no&alerts=no&lang=sv"
+  )
+    .then((response) => response.json())
+    .then((response) => {
+      let conditionText = response.current.condition.text;
+      let conditionIcon = response.current.condition.icon;
+
+      let conditionElementText = document.getElementById("weatherText");
+      let conditionElementIcon = document.getElementById("weatherIcon");
+
+      conditionElementText.innerText = conditionText.toLowerCase();
+      conditionElementIcon.src = conditionIcon;
+
+      /* switch (conditionText) {
+        case "Clear":
+          conditionText = "Klart";
+          break;
+        case "Partly cloudy":
+          conditionText = "Delvis molniga";
+          break;
+        default:
+          conditionText = ".";
+          break;
+      }*/
+
+      console.log(conditionText);
+      console.log(conditionIcon);
+    });
+}
+
+getWeather();
+// expandeble button on the CV on the page myWork
 let coll = document.getElementsByClassName("expandable");
 let i;
 
