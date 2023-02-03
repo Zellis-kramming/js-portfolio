@@ -10,6 +10,11 @@ I have also used Javascript to feth the weather and print that out on the aboutM
 The same site that i fetch the weather from also provided the weather icons and the weather in swedish. I have tried to make the text as good as possible to fit with all the different weathers..
 I have used.toLowercase so that the weather should blend in nicely. i use a different color on the font to make it pop.
 
+**Javascript weather-api**
+
+- For weather data i use https://www.weatherapi.com/ as api.
+- Fetching data adding part of the response to a HTML element.
+
 **WCAG**
 
 - I have choosen a font that are easy to read and i have increased the spaces between the rows and the letter spacing for extra god visibility 1.4.12.

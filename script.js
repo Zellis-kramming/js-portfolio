@@ -22,7 +22,10 @@ function getWweatherData(ipadress) {
       let conditionElementText = document.getElementById("weatherText");
       let conditionElementIcon = document.getElementById("weatherIcon");
 
-      conditionElementText.innerText = conditionText.toLowerCase();
+      conditionElementText.innerText =
+        "Idag säger väderleksprognosen att det är " +
+        conditionText.toLowerCase() +
+        ".";
       conditionElementIcon.src = conditionIcon;
 
       console.log(conditionText);
